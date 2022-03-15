@@ -1,0 +1,45 @@
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[OpeningOpen]') AND type in (N'P', N'PC'))
+BEGIN
+	EXEC dbo.sp_executesql @statement = N'CREATE PROCEDURE [dbo].[OpeningOpen] AS' 
+END
+GO
+
+-- =============================================
+-- Author:		Victor Bravo
+-- Create date: 8-March-22 
+-- Description:	Stored Procedure OpeningOpen
+-- =============================================
+
+ALTER PROCEDURE [dbo].[OpeningOpen]
+	@IdOpening [BigInt] OUTPUT,
+	@DateStartOpening [DateTime] OUTPUT,
+	@IdRoulette [BigInt]
+AS
+BEGIN	
+	SET NOCOUNT ON;
+	DECLARE @Now DateTime = GETDATE()
+	INSERT INTO [Openings]	(
+		[IdRoulette],
+		[DateStartOpening],
+		[DateFinishOpening],
+		[NumberOpening],
+		[ColorOpening],
+		[EnableOpening] )
+		VALUES (
+		@IdRoulette,
+		@Now,
+		NULL,
+		NULL,
+		NULL,
+		1 );
+		
+	SELECT @IdOpening = SCOPE_IDENTITY();
+	SELECT @DateStartOpening = @Now;
+END;
+GO

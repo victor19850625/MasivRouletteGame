@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasivRoulette.ApiRest", "MasivRoulette.ApiRest\MasivRoulette.ApiRest.csproj", "{D6DC5915-0D8B-4189-B8FB-59836A735D43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.Application", "MasivRoulette.Application", "{DDAD1491-8285-433F-89AE-BEF714222855}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.DataAccess", "MasivRoulette.DataAccess", "{ABFCCB46-DD66-4292-A0F2-EDA4D24B722F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.Services", "MasivRoulette.Services", "{48980680-DFCD-4B06-BEE1-6D4F2B7B2B21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.Entities", "MasivRoulette.Entities", "{B3D8888B-CF5D-4874-BFC7-7DF067F770C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasivRoulette.DataAccess", "MasivRoulette.DataAccess\MasivRoulette.DataAccess.csproj", "{C840C7E7-564A-437C-8DC4-E668CCB1D15C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlScripts", "SqlScripts", "{F2DE4C00-2016-4D8A-862D-9969B4035D27}"
+	ProjectSection(SolutionItems) = preProject
+		MasivRoulette.DataBases\SqlScripts\1-dbo.Users.SqlScript.sql = MasivRoulette.DataBases\SqlScripts\1-dbo.Users.SqlScript.sql
+		MasivRoulette.DataBases\SqlScripts\2-dbo.Roulettes.SqlScript.sql = MasivRoulette.DataBases\SqlScripts\2-dbo.Roulettes.SqlScript.sql
+		MasivRoulette.DataBases\SqlScripts\3-dbo.Openings.SqlScript.sql = MasivRoulette.DataBases\SqlScripts\3-dbo.Openings.SqlScript.sql
+		MasivRoulette.DataBases\SqlScripts\4-dbo.Bets.SqlScript.sql = MasivRoulette.DataBases\SqlScripts\4-dbo.Bets.SqlScript.sql
+		MasivRoulette.DataBases\SqlScripts\CompleteDatabaseCreation.sql = MasivRoulette.DataBases\SqlScripts\CompleteDatabaseCreation.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoredProcedures", "StoredProcedures", "{B882F67F-A740-43A5-820A-5102ADC76493}"
+	ProjectSection(SolutionItems) = preProject
+		MasivRoulette.DataBases\StoredProcedures\dbo.Bet_g.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Bet_g.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.Bet_i.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Bet_i.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.BetsIdOpening_g.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.BetsIdOpening_g.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.BetsWinners_g.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.BetsWinners_g.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.Opening_g.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Opening_g.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.OpeningClose.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.OpeningClose.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.OpeningOpen.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.OpeningOpen.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.Roulette_g.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Roulette_g.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.Roulette_i.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Roulette_i.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.Roulette_u.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Roulette_u.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.Roulettes_g_All.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.Roulettes_g_All.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.User_g.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.User_g.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.User_g_All.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.User_g_All.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.User_i.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.User_i.StoredProcedure.sql
+		MasivRoulette.DataBases\StoredProcedures\dbo.User_u.StoredProcedure.sql = MasivRoulette.DataBases\StoredProcedures\dbo.User_u.StoredProcedure.sql
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasivRoulette.Entities", "MasivRoulette.Entities\MasivRoulette.Entities.csproj", "{56D8FE85-7477-4175-A0E6-E103667F19FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasivRoulette.Services", "MasivRoulette.Services\MasivRoulette.Services.csproj", "{24F3BCB3-B652-4755-8B0C-33A1A9EA3C86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collection", "Collection", "{7D1519F1-04ED-47CC-BAF8-42EF956EA078}"
+	ProjectSection(SolutionItems) = preProject
+		MasivRoulette.DataBases\Collection\Masiv.RouletteGame.json = MasivRoulette.DataBases\Collection\Masiv.RouletteGame.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.Website", "MasivRoulette.Website", "{0100B2E1-9D7E-4D51-B8C7-D535BC3DC8CE}"
+	ProjectSection(SolutionItems) = preProject
+		MasivRoulette.Website\MasivRoulette.Website.rar = MasivRoulette.Website\MasivRoulette.Website.rar
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.Files", "MasivRoulette.Files", "{7993AF95-AA4E-4BD3-A1F9-0D19A038D635}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasivRoulette.DataBases", "MasivRoulette.DataBases", "{F0CA33D5-DBC7-48F4-AD14-E1256457C573}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MasivRoulette.DataBases", "MasivRoulette.DataBases\MasivRoulette.DataBases.sqlproj", "{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6DC5915-0D8B-4189-B8FB-59836A735D43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DC5915-0D8B-4189-B8FB-59836A735D43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DC5915-0D8B-4189-B8FB-59836A735D43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DC5915-0D8B-4189-B8FB-59836A735D43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C840C7E7-564A-437C-8DC4-E668CCB1D15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C840C7E7-564A-437C-8DC4-E668CCB1D15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C840C7E7-564A-437C-8DC4-E668CCB1D15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C840C7E7-564A-437C-8DC4-E668CCB1D15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D8FE85-7477-4175-A0E6-E103667F19FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D8FE85-7477-4175-A0E6-E103667F19FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D8FE85-7477-4175-A0E6-E103667F19FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D8FE85-7477-4175-A0E6-E103667F19FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F3BCB3-B652-4755-8B0C-33A1A9EA3C86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F3BCB3-B652-4755-8B0C-33A1A9EA3C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F3BCB3-B652-4755-8B0C-33A1A9EA3C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F3BCB3-B652-4755-8B0C-33A1A9EA3C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6DC5915-0D8B-4189-B8FB-59836A735D43} = {DDAD1491-8285-433F-89AE-BEF714222855}
+		{C840C7E7-564A-437C-8DC4-E668CCB1D15C} = {ABFCCB46-DD66-4292-A0F2-EDA4D24B722F}
+		{F2DE4C00-2016-4D8A-862D-9969B4035D27} = {7993AF95-AA4E-4BD3-A1F9-0D19A038D635}
+		{B882F67F-A740-43A5-820A-5102ADC76493} = {7993AF95-AA4E-4BD3-A1F9-0D19A038D635}
+		{56D8FE85-7477-4175-A0E6-E103667F19FB} = {B3D8888B-CF5D-4874-BFC7-7DF067F770C3}
+		{24F3BCB3-B652-4755-8B0C-33A1A9EA3C86} = {48980680-DFCD-4B06-BEE1-6D4F2B7B2B21}
+		{7D1519F1-04ED-47CC-BAF8-42EF956EA078} = {7993AF95-AA4E-4BD3-A1F9-0D19A038D635}
+		{FF7F82D9-0AB9-4C3D-B943-434B4BDEEA08} = {F0CA33D5-DBC7-48F4-AD14-E1256457C573}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83B3F8D1-9629-4CCD-992D-E70297C2B1CD}
+	EndGlobalSection
+EndGlobal
